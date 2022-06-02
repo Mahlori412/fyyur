@@ -116,8 +116,8 @@ class VenueForm(Form):
     facebook_link = StringField(
         'facebook_link', validators=[URL()]
     )
-    website = StringField(
-        'website'
+    website_link = StringField(
+        'website_link'
     )
 
     seeking_talent = BooleanField( 'seeking_talent' )
@@ -192,8 +192,8 @@ class ArtistForm(Form):
         ]
     )
     phone = StringField(
-        # TODO implement validation logic for phone 
-        'phone', validators = [DataRequired()]
+        # TODO implement validation logic for state
+        'phone'
     )
     image_link = StringField(
         'image_link'
@@ -227,8 +227,8 @@ class ArtistForm(Form):
         'facebook_link', validators=[URL()]
      )
 
-    website = StringField(
-        'website'
+    website_link = StringField(
+        'website_link'
      )
 
     seeking_venue = BooleanField( 'seeking_venue' )

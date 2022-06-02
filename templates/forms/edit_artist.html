@@ -6,7 +6,7 @@
       <h3 class="form-heading">Edit artist <em>{{ artist.name }}</em></h3>
       <div class="form-group">
         <label for="name">Name</label>
-        {{ form.name(class_ = 'form-control', autofocus = true) }}
+        {{ form.name(class_ = 'form-control', autofocus = true)  }}
       </div>
       <div class="form-group">
           <label>City & State</label>
@@ -39,8 +39,8 @@
       </div>
 
       <div class="form-group">
-            <label for="website">Website Link</label>
-            {{ form.website(class_ = 'form-control', placeholder='http://', autofocus = true) }}
+            <label for="website_link">Website Link</label>
+            {{ form.website_link(class_ = 'form-control', placeholder='http://', autofocus = true) }}
       </div>
 
       <div class="form-group">
@@ -54,6 +54,8 @@
       </div>
       
       <input type="submit" value="Edit Artist" class="btn btn-primary btn-lg btn-block">
+     
     </form>
   </div>
 {% endblock %}
+
